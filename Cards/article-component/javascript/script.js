@@ -4,10 +4,6 @@ const shareSocialMediaDesktop = event => {
 }
 
 const shareSocialMediaMobile = event => {
-switchDisplay();
-}
-
-const switchDisplay = () => {
     const michelleInfo = document.querySelector("#michelle-reference");
     const socialMedia = document.querySelector("#social-media");
 
@@ -16,7 +12,9 @@ const switchDisplay = () => {
 }
 
 
+
 const loadEvents = () =>{
+    //add the rest of the cards on the html
     document.querySelector("#share").addEventListener("touchend", shareSocialMediaMobile);
     document.querySelector("#share").addEventListener("click", shareSocialMediaDesktop);
 }
