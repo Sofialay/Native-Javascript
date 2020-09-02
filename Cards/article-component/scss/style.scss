@@ -1,0 +1,169 @@
+@import "./variables";
+
+// sacar el body que abarca toda la card.
+//limpiar codigo de cosas innecesarias
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-family: $font-family-Manrope;
+    background-color: lightgrey;
+}
+
+    h2, h3, div, article, p {
+        margin: 0;
+    }
+
+    button {
+        border: none;
+    }
+
+    .card {
+        margin: 20px;
+        max-width: 80%;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        .img-product { 
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            display: block;
+            }
+        .product-description { 
+            padding: 25px;
+            text-align: start;
+            h2 {
+                font-weight: 700;
+                font-size: medium;
+                color: $darkGrayishBlue;
+                margin-bottom: 10px;
+            }
+            p {
+                font-weight: 500;
+                font-size: small;
+                color: $desaturatedDarkBlue;
+                margin-bottom: 10px;
+            }
+        }
+        .share-and-button {
+            padding: 0 25px 10px;
+            display: flex;
+            justify-content: space-between;
+            .info-michelle {
+                display: flex;
+                img {
+                    margin-right: 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .name-and-date {
+                        color: $darkGrayishBlue;
+                        margin-top: 10px;
+                        font-size: 10px;
+                    }
+                }
+            .share-button {
+                width: 0;
+                padding-right: 8%;
+                background-color: whitesmoke;
+                .icon-share {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    &:focus {
+                        outline: none; // thin dotted? 
+                    }
+                }
+            }
+        }
+        .share-social-media {
+            display: flex;
+            padding: 25px;
+            transition: all .6s ease-in-out;
+            justify-content: center;
+            justify-content: space-between;
+            background-color: $darkGrayishBlue;
+            border-radius: 0 0 10px 10px;
+            p {
+                color: whitesmoke;
+                letter-spacing: 0.5ch;
+                font-size: small;
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+            .share-button {
+                width: 5px;
+                height: 5px;
+                padding-right: 8%;
+                background-color: $darkGrayishBlue;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+        @media (min-width: 768px) {
+            .card {
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 1200px) {
+            .card {
+               display: flex;
+               position: relative;
+               .img-product {
+                   width: 45%;
+                   border-radius: 10px 0 0 10px;
+               }
+               .product-description {
+                   h2 {
+                       font-size: 18px;
+                   }
+                   p {
+                       font-size: 14px;
+                   }
+               }
+               .share-social-media {
+                    width: 130px;
+                    padding: 15px;
+                    height: 10px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 65px;
+                    border-radius: 10px;
+                    justify-content: space-evenly;
+                    .share-button {
+                        display: none;
+                    }
+                    p {
+                        font-size: 8px;
+                    }
+                    .icon {
+                        width: 12px;
+                        height: 12px;
+                        cursor: pointer;
+                        &:hover {
+                            transition: all 0.2 ease-in-out transform;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .triangle {
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 15px solid $darkGrayishBlue;
+                        position: absolute;
+                        bottom: -8px;
+                        right: 30px;
+                    }
+                }
+            }
+        }
+        
+

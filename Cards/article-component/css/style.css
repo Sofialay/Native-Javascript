@@ -1,0 +1,134 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  font-family: "Manrope", sans-serif;
+  background-color: lightgrey; }
+
+h2, h3, div, article, p {
+  margin: 0; }
+
+button {
+  border: none; }
+
+.card {
+  margin: 20px;
+  max-width: 80%;
+  background-color: whitesmoke;
+  border-radius: 10px; }
+  .card .img-product {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    display: block; }
+  .card .product-description {
+    padding: 25px;
+    text-align: start; }
+    .card .product-description h2 {
+      font-weight: 700;
+      font-size: medium;
+      color: #48556a;
+      margin-bottom: 10px; }
+    .card .product-description p {
+      font-weight: 500;
+      font-size: small;
+      color: #6d7f97;
+      margin-bottom: 10px; }
+  .card .share-and-button {
+    padding: 0 25px 10px;
+    display: flex;
+    justify-content: space-between; }
+    .card .share-and-button .info-michelle {
+      display: flex; }
+      .card .share-and-button .info-michelle img {
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+      .card .share-and-button .info-michelle .name-and-date {
+        color: #48556a;
+        margin-top: 10px;
+        font-size: 10px; }
+    .card .share-and-button .share-button {
+      width: 0;
+      padding-right: 8%;
+      background-color: whitesmoke; }
+      .card .share-and-button .share-button .icon-share {
+        width: 20px;
+        height: 20px;
+        cursor: pointer; }
+        .card .share-and-button .share-button .icon-share:focus {
+          outline: none; }
+  .card .share-social-media {
+    display: flex;
+    padding: 25px;
+    transition: all .6s ease-in-out;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #48556a;
+    border-radius: 0 0 10px 10px; }
+    .card .share-social-media p {
+      color: whitesmoke;
+      letter-spacing: 0.5ch;
+      font-size: small; }
+    .card .share-social-media .icon {
+      width: 20px;
+      height: 20px; }
+    .card .share-social-media .share-button {
+      width: 5px;
+      height: 5px;
+      padding-right: 8%;
+      background-color: #48556a; }
+      .card .share-social-media .share-button img {
+        width: 20px;
+        height: 20px; }
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 50%; } }
+
+@media (min-width: 1200px) {
+  .card {
+    display: flex;
+    position: relative; }
+    .card .img-product {
+      width: 45%;
+      border-radius: 10px 0 0 10px; }
+    .card .product-description h2 {
+      font-size: 18px; }
+    .card .product-description p {
+      font-size: 14px; }
+    .card .share-social-media {
+      width: 130px;
+      padding: 15px;
+      height: 10px;
+      position: absolute;
+      right: 10px;
+      bottom: 65px;
+      border-radius: 10px;
+      justify-content: space-evenly; }
+      .card .share-social-media .share-button {
+        display: none; }
+      .card .share-social-media p {
+        font-size: 8px; }
+      .card .share-social-media .icon {
+        width: 12px;
+        height: 12px;
+        cursor: pointer; }
+        .card .share-social-media .icon:hover {
+          transition: all 0.2 ease-in-out transform;
+          transform: scale(1.2); }
+      .card .share-social-media .triangle {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 15px solid #48556a;
+        position: absolute;
+        bottom: -8px;
+        right: 30px; } }
