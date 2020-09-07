@@ -19,3 +19,7 @@ const loadEvents = () =>{
     document.querySelector("#share").addEventListener("click", shareSocialMediaDesktop);
 }
 
+// añadir cursor pointer a el icono share 
+// sacarles los bordes de clickeado
+// añadir el resto de las cards.
+
