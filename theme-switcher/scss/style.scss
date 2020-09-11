@@ -1,5 +1,2 @@
-@import "./variables";
-
-body {
-    font-family: $font-inter;
-}
+@import "./layout/dashboard.scss";
+@import "./layout/styles-overview.scss";

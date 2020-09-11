@@ -1,7 +1,59 @@
-@import "./variables";
-@import "./mixins";
+@import "../abstract/mixins";
+@import "../abstract/variables";
 
 .overview-today {
-    padding:15px;
-    color: $veryDarkBlue;
+    padding-right:10px;
+    padding-left:10px;
+    h2 {
+        font-weight: bold;
+        color: $darkGrayishBlue;
+        padding-bottom: 10px;
+    }
+    .card-information {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       .information-media {
+           width: 90%;
+           padding: 20px;
+           background-color: $lightGrayishBlue;
+           border-radius: 5px;
+           margin: 5px;
+           .social-media {
+               display: flex;
+               justify-content: space-between;
+               h3 {
+                   color: $darkGrayishBlue;
+                   font-size: medium;
+               }
+           }
+           .counter-and-percent {
+               margin-top: 15px;
+               margin-bottom: 15px;
+               display: flex;
+               justify-content: space-between;
+               .counter {
+                   font-size: xx-large;
+                   font-weight: bold;
+               }
+               .triangle-and-percent {
+                   display: flex;
+                   margin-top: 10px;
+                    .triangle {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 7px 7px 7px 7px;
+                        border-color: transparent transparent #1db489 transparent;
+                        margin-right: 5px; 
+                    }
+                    .percent {
+                        font-weight: bold;
+                        color: $lime-green;
+                        font-size: small;
+                    }
+               }
+           }
+       }
+    }
 }
