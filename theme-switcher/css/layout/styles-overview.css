@@ -1,10 +1,11 @@
 .overview-today {
-  padding-right: 10px;
-  padding-left: 10px; }
+  padding: 0 10px; }
   .overview-today h2 {
     font-weight: bold;
     color: #63687e;
     padding-bottom: 10px; }
+    body.dark .overview-today h2 {
+      color: white; }
   .overview-today .card-information {
     display: flex;
     flex-direction: column;
@@ -12,23 +13,28 @@
     .overview-today .card-information .information-media {
       width: 90%;
       padding: 20px;
+      margin: 5px;
       background-color: #f0f2fa;
-      border-radius: 5px;
-      margin: 5px; }
+      border-radius: 5px; }
+      body.dark .overview-today .card-information .information-media {
+        background-color: #252a41; }
       .overview-today .card-information .information-media .social-media {
         display: flex;
         justify-content: space-between; }
         .overview-today .card-information .information-media .social-media h3 {
           color: #63687e;
           font-size: medium; }
+          body.dark .overview-today .card-information .information-media .social-media h3 {
+            color: #8b97c6; }
       .overview-today .card-information .information-media .counter-and-percent {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 15px 0;
         display: flex;
         justify-content: space-between; }
         .overview-today .card-information .information-media .counter-and-percent .counter {
           font-size: xx-large;
           font-weight: bold; }
+          body.dark .overview-today .card-information .information-media .counter-and-percent .counter {
+            color: white; }
         .overview-today .card-information .information-media .counter-and-percent .triangle-and-percent {
           display: flex;
           margin-top: 10px; }
@@ -43,3 +49,15 @@
             font-weight: bold;
             color: #1db489;
             font-size: small; }
+
+@media (min-width: 1200px) {
+  .overview-today {
+    padding: 25px 0;
+    margin: 0 100px; }
+    .overview-today .card-information {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .overview-today .card-information .information-media {
+        width: 260px;
+        margin: 10px; } }

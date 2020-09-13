@@ -1,5 +1,7 @@
-const chk = document.querySelector('chk');
+const loadEvent = () => {
+	const chk = document.querySelector('#chk');
 
-chk.addEventListener('change', () => {
+	chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
+}
