@@ -1,6 +1,10 @@
+Hi! You can check out my resolution for this challenge [here](https://theme-switcher-sass-js.vercel.app/)  
+
+
+<!--Challenge by frontmentor.io-->
+
 # Social media dashboard with theme switcher
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 

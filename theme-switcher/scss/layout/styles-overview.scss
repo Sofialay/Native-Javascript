@@ -81,8 +81,9 @@
     .overview-today{
         padding: 25px 0;
         margin: 0 100px;
+        text-align: center;
         .card-information {
-            display: flex;
+            justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
             .information-media {
